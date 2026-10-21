@@ -9,7 +9,7 @@ jobs:
         with: { node-version: 18 }
       - run: npm install -g newman newman-reporter-htmlextra
       - run: |
-          newman run collection.json \
-            -e environment.json \
+          newman run 2474802010427_HuynhTheTung_GoRest.postman_collection.json \
+            -e 2474802010427_HuynhTheTung_GoRest_Env.postman_environment.json \
             -d users.csv \
             --env-var "token=${{ secrets.GOREST_TOKEN }}"
